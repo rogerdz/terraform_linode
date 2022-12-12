@@ -1,0 +1,4 @@
+-run:
+export TF_VAR_TOKEN=xxx; terraform apply -auto-approve
+- get ip:
+terraform output -json instance_ip | jq -r '.[0]'
