@@ -9,6 +9,12 @@ terraform {
 
 variable "TOKEN" {
   description = "Linode Api Token"
+  default = "token_here"
+}
+
+variable "NAME" {
+  description = "Linode Server Label"
+  default = "Name"
 }
 
 provider "linode" {
