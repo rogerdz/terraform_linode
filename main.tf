@@ -17,7 +17,7 @@ provider "linode" {
 
 resource "linode_instance" "jenkins-agent" {
 	image = "private/18278973"
-	label = "AGENT-test"
+	label = var.NAME
 	region = "ap-south"
 	type = "g6-standard-2"
 	swap_size = 2048
