@@ -46,7 +46,7 @@ resource "linode_instance" "jenkins-agent" {
 
 	provisioner "remote-exec" {
     inline = [
-      "docker run -d --rm --name=agent --publish 2020:22 -v /var/run/docker.sock:/var/run/docker.sock -e 'JENKINS_AGENT_SSH_PUBKEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG/U3Iyz299qasZxKWwWgx96Qfng4+s2zrwqwlZAuFRcmsRc1r10kSLDYmWUviJc0gjdu+4BrnGxx8CNG+7SuAh5I2MJXlquBrht29Xi72BZOjCn9eMmKg6OtybRDMCakpkf0Ji2I5oYinEip8IdBE8ZOM/C/l6t+0fmIlct8GSGknVvPBHglpuTbO9ow6pTM1XyNj+sUuzPLwyZq20B+aX+aUGfv+ryk1Y+zT7BPupKgQa0dm8lEOMHmR57iyFDe1PIzqM3PfDuDMOKnxIfTOQYTRIzi4Ve2fC4bMnReyfWcBjVHtrcmJUwxpJJBcQxkxfvo7hATT1vBP8dErGlT2PwKPTc1E90Plf/l44rWcVyLxgl9ISEQA/7nZnABD7xGKXUiEPNKlwl2xxKhqxgiQm1mA0YExqHqQ6LrV1MHMOmXN2orM/hsWXzU0BmXyGG/YxY9jWp5jzr1/fPhsQzWufJruD6uDhbAum2bMUPPVHcIBx8t8Js1mZTQo7UUvJTAHWUca7zlCfXoR86NWGdIyhZsCjL30tDf8H7GHHOVu8m0EbTTAzD71Se1viAvpgRD7jbmtIPXTnWBMQonWQDm0XBr3AW9ybvrZFSYf3DCJ483T8zAW/RR9WGUXTDjvW9oZk79aVK9gEsFPsn/idv82xSJAYR3TgbVUwTv6TCEjjQ== hieudang@hieudang' rogerdz/jenkins:ssh-agent"
+      "docker run -d --rm --name=agent --publish 2020:22 -v /var/run/docker.sock:/var/run/docker.sock -e 'JENKINS_AGENT_SSH_PUBKEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQjLY6AfojC5PFlQKJRwk3jhFblyHqEwLeldDhuuOxTyDSpIVs2pDo9NecHy3O/58Uo2bZ2Udw+9zkhYcjdbRD0iHWLnHMByrgUPFN1hnhiavKKSqNu2/LG6tfVq+9h1ANawST4sASBIH5pjGXGLe4qk9r+FeUX+gXkvp+NDQ6c4riAKJbBtdUbVC7PqOcWbeCHei+E4qP3zEd9gbfXHRG9QtzH1zf7/kSK8HxNl8Me6tI0qqhWACsTgdLmGksnEpwqBzTvzstHy/FHzhR/obmIGeXqsoPchBF1gcMwrC5C0ZSqSaTp40ukt+Qs+oIcyhN+t70KhQRKfr1Mtc+BGzWPQyXvWciiuJKDr/Fr2bu3Onwk9k8wco8H/SVhY852FgVSFhB0B28qUlyd3GbmI4pfy+Frypu5P3E5hJZXLQCvlnY9shytYoYbBo5Kr3I2npn2YdIpYvTvr60j52s2Hq2Xg3uxAr+ho3Hu8rwYSrP8uJchu0M/B0i9oAAfnYGl90= hieudang@hieudang' rogerdz/jenkins:ssh-agent"
     ]
 	}
 }
