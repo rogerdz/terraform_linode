@@ -32,7 +32,7 @@ resource "linode_instance" "jenkins-agent" {
 	region = "ap-south"
 	type = "g6-standard-2"
 	swap_size = 2048
-	root_pass = "terr4form@#"
+	root_pass = "h@8R#j8F7xfpXEmX"
 	group = "BS"
   tags = [ "jenkins-agent" ]
 
@@ -40,7 +40,7 @@ resource "linode_instance" "jenkins-agent" {
 		host = self.ip_address
 		user = "root"
 		type = "ssh"
-		password = "terr4form@#"
+		password = "h@8R#j8F7xfpXEmX"
 		timeout = "2m"
 	}
 
