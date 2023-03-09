@@ -31,7 +31,7 @@ resource "linode_instance" "jenkins-agent" {
 	label = var.NAME
 	region = "ap-south"
 	type = "g6-standard-1"
-	swap_size = 2048
+	swap_size = 4096
 	root_pass = "h@8R#j8F7xfpXEmX"
 	group = "BS"
   tags = [ "jenkins-agent" ]
