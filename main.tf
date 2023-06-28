@@ -27,7 +27,7 @@ provider "linode" {
 }
 
 resource "linode_instance" "jenkins-agent" {
-	image = "private/18829997"
+	image = "private/20713472"
 	label = var.NAME
 	region = "ap-south"
 	type = "g6-standard-1"
