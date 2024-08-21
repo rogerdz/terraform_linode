@@ -34,7 +34,7 @@ resource "linode_instance" "jenkins-agent" {
 	swap_size = 4096
 	root_pass = "h@8R#j8F7xfpXEmX"
 	group = "BS"
-  tags = [ "jenkins-agent" ]
+  tags = [ "BS CI/CD Agent" ]
 
 	connection {
 		host = self.ip_address
